@@ -4,25 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Básico -->
+    <!-- =================================================================== -->
+    <!-- ======================= SEO AVANZADO ============================ -->
+    <!-- =================================================================== -->
+
+    <!-- Título y Descripción Optimizados -->
     <title data-key="pageTitle">Brief Creativo Interactivo - Hitster Media</title>
     <meta name="description" content="Completa nuestro brief creativo interactivo para tus proyectos de Ai, animación, CGI, video, fotografía y postproducción. Define tus necesidades y obtén una cotización precisa con Hitster Media.">
+    
+    <!-- Instrucciones para los Motores de Búsqueda -->
+    <meta name="robots" content="index, follow">
     <meta name="keywords" content="brief creativo, formulario de producción, hitster media, producción audiovisual, servicios de video, fotografía publicitaria, animación, CGI, postproducción, brief para agencias">
+    
+    <!-- URL Canónica (URL preferida de esta página) -->
     <link rel="canonical" href="URL_DE_TU_PAGINA_WEB_AQUI">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Hreflang para versiones de idioma -->
+    <link rel="alternate" hreflang="es" href="URL_DE_TU_PAGINA_WEB_AQUI_VERSION_ESPAÑOL">
+    <link rel="alternate" hreflang="en" href="URL_DE_TU_PAGINA_WEB_AQUI_VERSION_INGLES">
+    <link rel="alternate" hreflang="x-default" href="URL_DE_TU_PAGINA_WEB_AQUI_VERSION_ESPAÑOL">
+
+    <!-- Open Graph para Redes Sociales (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="URL_DE_TU_PAGINA_WEB_AQUI">
     <meta property="og:title" content="Brief Creativo Interactivo - Hitster Media">
     <meta property="og:description" content="Define fácilmente los requisitos de tu próximo proyecto de producción audiovisual o fotográfico con nuestro formulario interactivo.">
     <meta property="og:image" content="URL_DE_UNA_IMAGEN_DE_PREVISUALIZACION_AQUI">
+    <meta property="og:site_name" content="Hitster Media">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="URL_DE_TU_PAGINA_WEB_AQUI">
-    <meta property="twitter:title" content="Brief Creativo Interactivo - Hitster Media">
-    <meta property="twitter:description" content="Define fácilmente los requisitos de tu próximo proyecto de producción audiovisual o fotográfico con nuestro formulario interactivo.">
-    <meta property="twitter:image" content="URL_DE_UNA_IMAGEN_DE_PREVISUALIZACION_AQUI">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="URL_DE_TU_PAGINA_WEB_AQUI">
+    <meta name="twitter:title" content="Brief Creativo Interactivo - Hitster Media">
+    <meta name="twitter:description" content="Define fácilmente los requisitos de tu próximo proyecto de producción audiovisual o fotográfico con nuestro formulario interactivo.">
+    <meta name="twitter:image" content="URL_DE_UNA_IMAGEN_DE_PREVISUALIZACION_AQUI">
+
+    <!-- Favicon (reemplaza con las rutas a tus iconos) -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <!-- =================================================================== -->
+    <!-- ==================== FIN DE SEO AVANZADO ======================== -->
+    <!-- =================================================================== -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -190,14 +215,20 @@
             font-size: 0.9em;
         }
         
+        footer a {
+             color: #aaa;
+             text-decoration: none;
+             transition: color 0.2s ease-in-out;
+        }
+        footer a:hover {
+            text-decoration: underline;
+            color: var(--accent-blue);
+        }
+        
         #privacy-link {
             color: var(--accent-blue);
-            text-decoration: none;
-            cursor: pointer;
         }
-        #privacy-link:hover {
-            text-decoration: underline;
-        }
+
 
         /* --- Estilos del Popup (Modal) --- */
         .modal {
@@ -228,6 +259,7 @@
         .modal-body {
             max-height: 60vh;
             overflow-y: auto;
+            text-align: justify;
         }
 
         .close-button {
@@ -327,20 +359,23 @@
 
     </style>
     
-    <!-- Schema.org JSON-LD -->
+    <!-- Schema.org JSON-LD (Avanzado) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Brief Creativo Interactivo - Hitster Media",
+      "description": "Formulario interactivo para definir proyectos de producción audiovisual, fotográfica y de Ai con Hitster Media.",
       "url": "URL_DE_TU_PAGINA_WEB_AQUI",
-      "description": "Formulario interactivo para solicitar servicios de producción audiovisual y fotográfica de Hitster Media.",
+      "inLanguage": "es",
       "mainEntity": {
         "@type": "Service",
         "name": "Servicios de Producción Creativa",
+        "description": "Ofrecemos servicios de producción de alta calidad, incluyendo Ai, Animación, CGI, Video, Fotografía y Postproducción para agencias y marcas.",
         "provider": {
           "@type": "Organization",
-          "name": "Hitster Media"
+          "name": "Hitster Media",
+          "url": "https://studio--hitsterai.us-central1.hosted.app/es"
         },
         "serviceType": [
           "Producción con Ai",
@@ -353,6 +388,11 @@
         "areaServed": {
           "@type": "Country",
           "name": "MX"
+        },
+        "potentialAction": {
+          "@type": "Action",
+          "name": "Completar Brief Creativo",
+          "target": "URL_DE_TU_PAGINA_WEB_AQUI"
         }
       }
     }
@@ -456,19 +496,19 @@
             <div class="form-group">
                  <label data-key="refFilesLabel">Archivos de Referencia</label>
                  <p style="font-size: 0.9em; color: #ccc; margin-top: -5px;" data-key="refFilesSubtext">Usa el siguiente botón para subir todos los archivos necesarios (logos, guiones, moodboards, etc.) a nuestra carpeta compartida.</p>
+                 <p style="font-size: 0.9em; color: #ffc107; margin-top: 10px; font-weight: bold;" data-key="refFilesImportant">Importante: Antes de subir tus archivos, por favor crea una carpeta con el nombre del proyecto.</p>
                  <a href="https://drive.google.com/drive/folders/14Q_o0kKyrRYyQmDtaZbUFxqlrd4AFAo5?usp=sharing" target="_blank" class="drive-button" data-key="uploadBtn">Subir Archivos a Google Drive</a>
-            </div>
-
-            <div class="form-group">
-                <label for="message" data-key="keyMessageLabel">¿Cuál es el mensaje clave que debemos comunicar?</label>
-                <textarea id="message" name="mensaje_clave" required></textarea>
             </div>
 
             <button type="submit" class="submit-btn" data-key="submitBtn">Enviar Brief</button>
         </form>
         
         <footer>
-            <p>© 2025 todos los derechos reservados para Hitster Media | <a href="#" id="privacy-link" data-key="privacyLink">Aviso de Privacidad</a></p>
+            <p>
+                <span data-key="footerCopyright">© 2025 todos los derechos reservados para </span>
+                <a href="https://studio--hitsterai.us-central1.hosted.app/es" target="_blank">Hitster Media</a> | 
+                <a href="#" id="privacy-link" data-key="privacyLink">Aviso de Privacidad</a>
+            </p>
         </footer>
     </div>
 
@@ -500,8 +540,8 @@
                     deliverablesPlaceholder: "Ej: 1 video de 60s (16:9), 2 videos de 15s (9:16), 10 fotografías editadas...",
                     refFilesLabel: "Archivos de Referencia",
                     refFilesSubtext: "Usa el siguiente botón para subir todos los archivos necesarios (logos, guiones, moodboards, etc.) a nuestra carpeta compartida.",
+                    refFilesImportant: "Importante: Antes de subir, crea una carpeta en Google Drive con el nombre de tu proyecto y coloca todos tus archivos dentro.",
                     uploadBtn: "Subir Archivos a Google Drive",
-                    keyMessageLabel: "¿Cuál es el mensaje clave que debemos comunicar?",
                     serviceTypeLabel: "¿Qué tipo de producción necesitas?",
                     serviceAi: "Ai",
                     servicePhoto: "Fotografía Publicitaria",
@@ -519,15 +559,8 @@
                     videoToneLabel: "Describe el tono que debe tener el video",
                     videoTonePlaceholder: "Ej: Emotivo, inspirador, humorístico, corporativo...",
                     submitBtn: "Enviar Brief",
-                    footerText: "© 2025 todos los derechos reservados para Hitster Media | ",
-                    privacyLink: "Aviso de Privacidad",
-                    privacyContent: `<h2>Aviso de Privacidad</h2>
-                        <p><strong>Fecha de última actualización:</strong> 23 de junio de 2025</p>
-                        <p>Bienvenido a Hitster Ai. Tu privacidad es de suma importancia para nosotros. Este Aviso de Privacidad describe cómo recopilamos, utilizamos, protegemos y compartimos tu información personal cuando visitas y utilizas nuestro sitio web y nuestros servicios. Al utilizar Hitster Ai, aceptas las prácticas descritas en este documento.</p>
-                        <h4>1. Identidad y Domicilio del Responsable</h4>
-                        <p>Hitster Ai (en adelante, "nosotros", "nuestro"), con domicilio en Avenida Francisco I. Madero 104, Colonia Céspedes, Pachuca de Soto, Hidalgo, C.P. 42090, es el responsable del tratamiento de tus datos personales. Para cualquier asunto relacionado con este aviso, puedes contactarnos a través del correo electrónico: baez@hitster.page</p>
-                        <h4>2. Datos Personales que Recabamos</h4>
-                        <p>Recopilamos diferentes tipos de datos personales para operar y mejorar nuestros servicios...</p>` // Nota: El texto completo está aquí en el objeto real.
+                    footerCopyright: "© 2025 todos los derechos reservados para ",
+                    privacyLink: "Aviso de Privacidad"
                 },
                 en: {
                     pageTitle: "Interactive Creative Brief - Hitster Media",
@@ -543,8 +576,8 @@
                     deliverablesPlaceholder: "Ex: 1 video 60s (16:9), 2 videos 15s (9:16), 10 edited photographs...",
                     refFilesLabel: "Reference Files",
                     refFilesSubtext: "Use the button below to upload all necessary files (logos, scripts, moodboards, etc.) to our shared folder.",
+                    refFilesImportant: "Important: Before uploading, please create a folder in Google Drive with your project's name and place all your files inside.",
                     uploadBtn: "Upload Files to Google Drive",
-                    keyMessageLabel: "What is the key message we should communicate?",
                     serviceTypeLabel: "What type of production do you need?",
                     serviceAi: "AI",
                     servicePhoto: "Advertising Photography",
@@ -562,43 +595,73 @@
                     videoToneLabel: "Describe the tone the video should have",
                     videoTonePlaceholder: "Ex: Emotional, inspiring, humorous, corporate...",
                     submitBtn: "Submit Brief",
-                    footerText: "© 2025 All rights reserved for Hitster Media | ",
-                    privacyLink: "Privacy Notice",
-                    privacyContent: `<h2>Privacy Notice</h2>
-                        <p><strong>Last updated date:</strong> June 23, 2025</p>
-                        <p>Welcome to Hitster Ai. Your privacy is of utmost importance to us. This Privacy Notice describes how we collect, use, protect, and share your personal information when you visit and use our website and services. By using Hitster Ai, you agree to the practices described in this document.</p>
-                        <h4>1. Identity and Domicile of the Controller</h4>
-                        <p>Hitster Ai (hereinafter, "we", "our"), with domicile at Avenida Francisco I. Madero 104, Colonia Céspedes, Pachuca de Soto, Hidalgo, C.P. 42090, is the controller for the processing of your personal data. For any matter related to this notice, you can contact us via email: baez@hitster.page</p>
-                        <h4>2. Personal Data We Collect</h4>
-                        <p>We collect different types of personal data to operate and improve our services...</p>` // Note: Full translated text is here in the actual object.
+                    footerCopyright: "© 2025 All rights reserved for ",
+                    privacyLink: "Privacy Notice"
                 }
             };
-             // El texto completo del aviso de privacidad para ambos idiomas se incluye en el objeto translations.
-            translations.es.privacyContent = `<h2>Aviso de Privacidad</h2>
-                <p><strong>Fecha de última actualización:</strong> 23 de junio de 2025</p>
-                <p>Bienvenido a Hitster Ai. Tu privacidad es de suma importancia para nosotros. Este Aviso de Privacidad describe cómo recopilamos, utilizamos, protegemos y compartimos tu información personal cuando visitas y utilizas nuestro sitio web y nuestros servicios. Al utilizar Hitster Ai, aceptas las prácticas descritas en este documento.</p>
-                <h4>1. Identidad y Domicilio del Responsable</h4>
-                <p>Hitster Ai (en adelante, "nosotros", "nuestro"), con domicilio en Avenida Francisco I. Madero 104, Colonia Céspedes, Pachuca de Soto, Hidalgo, C.P. 42090, es el responsable del tratamiento de tus datos personales. Para cualquier asunto relacionado con este aviso, puedes contactarnos a través del correo electrónico: baez@hitster.page</p>
-                <h4>2. Datos Personales que Recabamos</h4>
-                <p>Recopilamos diferentes tipos de datos personales para operar y mejorar nuestros servicios:</p>
-                <p><strong>A. Datos que nos proporcionas directamente:</strong><br>Información de contacto y cuenta: Nombre completo, dirección de correo electrónico, contraseña y otra información que proporciones al registrarte.<br>Información de perfil: Datos adicionales que decidas agregar a tu perfil de usuario.<br>Comunicaciones: Información que nos proporcionas al contactar a nuestro equipo de soporte o al comunicarte con nosotros por cualquier otro medio.</p>
-                <p><strong>B. Datos que recopilamos automáticamente:</strong><br>Información de uso: Registramos cómo interactúas con nuestra plataforma, qué funcionalidades utilizas, la frecuencia y duración de tus visitas.<br>Datos del dispositivo y conexión: Dirección IP, tipo y versión del navegador, sistema operativo, identificadores únicos de dispositivo y otra información técnica.<br>Cookies y tecnologías similares: Utilizamos cookies, balizas web y otras tecnologías para recopilar información, mejorar la experiencia del usuario y para fines de análisis. Consulta nuestra sección sobre "Uso de Cookies" para más detalles.</p>
-                <h4>3. Finalidades del Tratamiento de Datos</h4>
-                <p>Utilizamos tus datos personales para las siguientes finalidades...</p> <!-- El texto completo está en el script real -->
-            `;
-             translations.en.privacyContent = `<h2>Privacy Notice</h2>
-                <p><strong>Last updated:</strong> June 23, 2025</p>
-                <p>Welcome to Hitster Ai. Your privacy is of the utmost importance to us. This Privacy Notice describes how we collect, use, protect, and share your personal information when you visit and use our website and our services. By using Hitster Ai, you agree to the practices described in this document.</p>
-                <h4>1. Identity and Address of the Controller</h4>
-                <p>Hitster Ai (hereinafter, "we", "our"), located at Avenida Francisco I. Madero 104, Colonia Céspedes, Pachuca de Soto, Hidalgo, C.P. 42090, is the controller of your personal data. For any matter related to this notice, you can contact us at the email address: baez@hitster.page</p>
-                <h4>2. Personal Data We Collect</h4>
-                <p>We collect different types of personal data to operate and improve our services:</p>
-                <p><strong>A. Data you provide directly to us:</strong><br>Contact and account information: Full name, email address, password, and other information you provide when you register.<br>Profile information: Additional data you choose to add to your user profile.<br>Communications: Information you provide to us when you contact our support team or otherwise communicate with us.</p>
-                <p><strong>B. Data we collect automatically:</strong><br>Usage information: We log how you interact with our platform, what features you use, the frequency and duration of your visits.<br>Device and connection data: IP address, browser type and version, apen-source operating system, unique device identifiers, and other technical information.<br>Cookies and similar technologies: We use cookies, web beacons, and other technologies to collect information, improve the user experience, and for analytics purposes. See our "Use of Cookies" section for more details.</p>
-                <h4>3. Purposes of Data Processing</h4>
-                <p>We use your personal data for the following purposes...</p> <!-- Full text is in the actual script -->
-            `;
 
+            const privacyPolicy = {
+                es: `<h2>Aviso de Privacidad</h2>
+                    <p><strong>Fecha de última actualización:</strong> 23 de junio de 2025</p>
+                    <p>Bienvenido a <a href="https://studio--hitsterai.us-central1.hosted.app/es" target="_blank" style="color: var(--accent-blue);">Hitster Ai</a>. Tu privacidad es de suma importancia para nosotros. Este Aviso de Privacidad describe cómo recopilamos, utilizamos, protegemos y compartimos tu información personal cuando visitas y utilizas nuestro sitio web y nuestros servicios. Al utilizar <a href="https://studio--hitsterai.us-central1.hosted.app/es" target="_blank" style="color: var(--accent-blue);">Hitster Ai</a>, aceptas las prácticas descritas en este documento.</p>
+                    <h4>1. Identidad y Domicilio del Responsable</h4>
+                    <p><a href="https://studio--hitsterai.us-central1.hosted.app/es" target="_blank" style="color: var(--accent-blue);">Hitster Ai</a> (en adelante, "nosotros", "nuestro"), con domicilio en Avenida Francisco I. Madero 104, Colonia Céspedes, Pachuca de Soto, Hidalgo, C.P. 42090, es el responsable del tratamiento de tus datos personales.</p>
+                    <p>Para cualquier asunto relacionado con este aviso, puedes contactarnos a través del correo electrónico: baez@hitster.page</p>
+                    <h4>2. Datos Personales que Recabamos</h4>
+                    <p>Recopilamos diferentes tipos de datos personales para operar y mejorar nuestros servicios:</p>
+                    <p><strong>A. Datos que nos proporcionas directamente:</strong><br>Información de contacto y cuenta: Nombre completo, dirección de correo electrónico, contraseña y otra información que proporciones al registrarte.<br>Información de perfil: Datos adicionales que decidas agregar a tu perfil de usuario.<br>Comunicaciones: Información que nos proporcionas al contactar a nuestro equipo de soporte o al comunicarte con nosotros por cualquier otro medio.</p>
+                    <p><strong>B. Datos que recopilamos automáticamente:</strong><br>Información de uso: Registramos cómo interactúas con nuestra plataforma, qué funcionalidades utilizas, la frecuencia y duración de tus visitas.<br>Datos del dispositivo y conexión: Dirección IP, tipo y versión del navegador, sistema operativo, identificadores únicos de dispositivo y otra información técnica.<br>Cookies y tecnologías similares: Utilizamos cookies, balizas web y otras tecnologías para recopilar información, mejorar la experiencia del usuario y para fines de análisis. Consulta nuestra sección sobre "Uso de Cookies" para más detalles.</p>
+                    <h4>3. Finalidades del Tratamiento de Datos</h4>
+                    <p>Utilizamos tus datos personales para las siguientes finalidades:</p>
+                    <p><strong>A. Finalidades Primarias (necesarias para el servicio):</strong><br>Proveer, operar y mantener nuestros servicios de inteligencia artificial.<br>Crear, gestionar y asegurar tu cuenta de usuario.<br>Procesar tus solicitudes, responder a tus preguntas y brindarte soporte técnico.<br>Garantizar la seguridad, prevenir fraudes y hacer cumplir nuestros términos y condiciones.<br>Enviarte comunicaciones transaccionales importantes sobre tu cuenta o cambios en el servicio.</p>
+                    <p><strong>B. Finalidades Secundarias (requieren tu consentimiento):</strong><br>Realizar análisis estadísticos y de comportamiento para mejorar y optimizar nuestros servicios y desarrollar nuevas funcionalidades.<br>Personalizar tu experiencia en nuestra plataforma.<br>Enviarte boletines informativos (newsletters), promociones, ofertas especiales y otras comunicaciones de marketing sobre nuestros productos.<br>Si no deseas que tus datos sean utilizados para estas finalidades secundarias, puedes manifestarlo enviando un correo a baez@hitster.page.</p>
+                    <h4>4. Transferencia de Datos Personales</h4>
+                    <p>No vendemos ni alquilamos tu información personal. Podemos compartir tus datos con terceros únicamente en las siguientes circunstancias:</p>
+                    <p>Proveedores de Servicios: Compartimos información con terceros que nos prestan servicios, como proveedores de alojamiento en la nube (ej. AWS, Google Cloud), plataformas de análisis (ej. Google Analytics) y procesadores de pagos. Estos proveedores solo tienen acceso a los datos necesarios para realizar sus funciones y están obligados contractualmente a protegerlos.</p>
+                    <p>Cumplimiento de la Ley: Podremos divulgar tu información si así lo exige la ley, una orden judicial o para proteger nuestros derechos, propiedad o seguridad, así como los de nuestros usuarios o el público en general.</p>
+                    <h4>5. Uso de Cookies y Tecnologías Similares</h4>
+                    <p>Utilizamos cookies para mejorar la funcionalidad de nuestro sitio. Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo. Puedes configurar tu navegador para rechazar todas las cookies o para que te avise cuando se envía una. Sin embargo, si no aceptas las cookies, es posible que no puedas utilizar algunas partes de nuestro servicio.</p>
+                    <h4>6. Derechos ARCO (Acceso, Rectificación, Cancelación y Oposición)</h4>
+                    <p>Como titular de los datos, tienes derecho a:<br>Acceder a los datos personales que poseemos sobre ti.<br>Rectificar tus datos si son inexactos o están incompletos.<br>Cancelar tus datos cuando consideres que no se están utilizando conforme a los principios y deberes establecidos.<br>Oponerte al tratamiento de tus datos para fines específicos.</p>
+                    <p>Para ejercer tus Derechos ARCO, envía una solicitud detallada a baez@hitster.page, incluyendo tu nombre completo, copia de una identificación oficial y una descripción clara de tu solicitud. Te responderemos en los plazos que marca la ley.</p>
+                    <h4>7. Revocación del Consentimiento</h4>
+                    <p>Puedes revocar el consentimiento que nos hayas otorgado para el tratamiento de tus datos personales en cualquier momento. Ten en cuenta que la revocación no tendrá efectos retroactivos. Para revocar tu consentimiento, envía tu solicitud a baez@hitster.page.</p>
+                    <h4>8. Medidas de Seguridad</h4>
+                    <p>Hemos implementado medidas de seguridad administrativas, técnicas y físicas para proteger tus datos personales contra daño, pérdida, alteración, destrucción o el uso, acceso o tratamiento no autorizado.</p>
+                    <h4>9. Cambios a este Aviso de Privacidad</h4>
+                    <p>Nos reservamos el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente aviso de privacidad. Cualquier cambio será notificado a través de nuestro sitio web o mediante comunicación directa a tu correo electrónico. Te recomendamos revisar periódicamente este aviso.</p>
+                    <p><a href="https://studio--hitsterai.us-central1.hosted.app/es" target="_blank" style="color: var(--accent-blue);">Hitster Ai</a></p>`,
+                en: `<h2>Privacy Notice</h2>
+                    <p><strong>Last updated:</strong> June 23, 2025</p>
+                    <p>Welcome to <a href="https://studio--hitsterai.us-central1.hosted.app/es" target="_blank" style="color: var(--accent-blue);">Hitster Ai</a>. Your privacy is of utmost importance to us. This Privacy Notice describes how we collect, use, protect, and share your personal information when you visit and use our website and services. By using <a href="https://studio--hitsterai.us-central1.hosted.app/es" target="_blank" style="color: var(--accent-blue);">Hitster Ai</a>, you agree to the practices described in this document.</p>
+                    <h4>1. Identity and Address of the Controller</h4>
+                    <p><a href="https://studio--hitsterai.us-central1.hosted.app/es" target="_blank" style="color: var(--accent-blue);">Hitster Ai</a> (hereinafter, "we", "our"), located at Avenida Francisco I. Madero 104, Colonia Céspedes, Pachuca de Soto, Hidalgo, C.P. 42090, is the controller for the processing of your personal data.</p>
+                    <p>For any matter related to this notice, you can contact us at the email address: baez@hitster.page</p>
+                    <h4>2. Personal Data We Collect</h4>
+                    <p>We collect different types of personal data to operate and improve our services:</p>
+                    <p><strong>A. Data you provide directly to us:</strong><br>Contact and account information: Full name, email address, password, and other information you provide when you register.<br>Profile information: Additional data you choose to add to your user profile.<br>Communications: Information you provide to us when you contact our support team or otherwise communicate with us.</p>
+                    <p><strong>B. Data we collect automatically:</strong><br>Usage information: We log how you interact with our platform, what features you use, the frequency and duration of your visits.<br>Device and connection data: IP address, browser type and version, operating system, unique device identifiers, and other technical information.<br>Cookies and similar technologies: We use cookies, web beacons, and other technologies to collect information, improve the user experience, and for analytics purposes. See our "Use of Cookies" section for more details.</p>
+                    <h4>3. Purposes of Data Processing</h4>
+                    <p>We use your personal data for the following purposes:</p>
+                    <p><strong>A. Primary Purposes (necessary for the service):</strong><br>Provide, operate, and maintain our artificial intelligence services.<br>Create, manage, and secure your user account.<br>Process your requests, answer your questions, and provide you with technical support.<br>Ensure security, prevent fraud, and enforce our terms and conditions.<br>Send you important transactional communications about your account or changes to the service.</p>
+                    <p><strong>B. Secondary Purposes (require your consent):</strong><br>Perform statistical and behavioral analysis to improve and optimize our services and develop new features.<br>Personalize your experience on our platform.<br>Send you newsletters, promotions, special offers, and other marketing communications about our products.<br>If you do not want your data to be used for these secondary purposes, you can state this by sending an email to baez@hitster.page.</p>
+                    <h4>4. Transfer of Personal Data</h4>
+                    <p>We do not sell or rent your personal information. We may share your data with third parties only in the following circumstances:</p>
+                    <p>Service Providers: We share information with third parties who provide services to us, such as cloud hosting providers (e.g., AWS, Google Cloud), analytics platforms (e.g., Google Analytics), and payment processors. These providers only have access to the data necessary to perform their functions and are contractually obligated to protect it.</p>
+                    <p>Legal Compliance: We may disclose your information if required by law, a court order, or to protect our rights, property, or safety, as well as those of our users or the general public.</p>
+                    <h4>5. Use of Cookies and Similar Technologies</h4>
+                    <p>We use cookies to improve the functionality of our site. Cookies are small text files that are stored on your device. You can set your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some parts of our service.</p>
+                    <h4>6. ARCO Rights (Access, Rectification, Cancellation, and Opposition)</h4>
+                    <p>As the data subject, you have the right to:<br>Access the personal data we hold about you.<br>Rectify your data if it is inaccurate or incomplete.<br>Cancel your data when you consider that it is not being used in accordance with the established principles and duties.<br>Oppose the processing of your data for specific purposes.</p>
+                    <p>To exercise your ARCO Rights, send a detailed request to baez@hitster.page, including your full name, a copy of an official ID, and a clear description of your request. We will respond within the timeframes established by law.</p>
+                    <h4>7. Revocación del Consentimiento</h4>
+                    <p>You can revoke the consent you have given us for the processing of your personal data at any time. Please note that the revocation will not have retroactive effects. To revoke your consent, send your request to baez@hitster.page.</p>
+                    <h4>8. Security Measures</h4>
+                    <p>We have implemented administrative, technical, and physical security measures to protect your personal data against damage, loss, alteration, destruction, or unauthorized use, access, or processing.</p>
+                    <h4>9. Cambios a este Aviso de Privacidad</h4>
+                    <p>We reserve the right to make modifications or updates to this privacy notice at any time. Any changes will be notified through our website or by direct communication to your email. We recommend that you periodically review this notice.</p>
+                    <p><a href="https://studio--hitsterai.us-central1.hosted.app/es" target="_blank" style="color: var(--accent-blue);">Hitster Ai</a></p>`
+            };
 
             const setLanguage = (lang) => {
                 document.documentElement.lang = lang;
@@ -614,17 +677,16 @@
                         elem.placeholder = translations[lang][key];
                     }
                 });
-                // Special handling for footer which has a link inside
-                const footerP = document.querySelector('footer p');
-                const privacyLink = footerP.querySelector('a');
-                if (footerP && privacyLink) {
-                    footerP.childNodes[0].nodeValue = translations[lang].footerText;
-                    privacyLink.innerText = translations[lang].privacyLink;
+                
+                const footerCopyrightSpan = document.querySelector('[data-key="footerCopyright"]');
+                if (footerCopyrightSpan) {
+                    footerCopyrightSpan.innerText = translations[lang].footerCopyright;
                 }
+
                 // Update privacy policy content
                 const privacyContentDiv = document.getElementById('privacy-content');
                 if (privacyContentDiv) {
-                    privacyContentDiv.innerHTML = translations[lang].privacyContent;
+                    privacyContentDiv.innerHTML = privacyPolicy[lang];
                 }
             };
 
@@ -699,3 +761,4 @@
 
 </body>
 </html>
+
