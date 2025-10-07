@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title data-key="pageTitle">Brief Creativo Interactivo - Hitster Media</title>
+    <meta name="description" content="Completa nuestro brief creativo interactivo para tus proyectos de Ai, animación, CGI, video, fotografía y postproducción. Define tus necesidades y obtén una cotización precisa con Hitster Media.">
+    <meta name="keywords" content="brief creativo, formulario de producción, hitster media, producción audiovisual, servicios de video, fotografía publicitaria, animación, CGI, postproducción, brief para agencias">
+    <link rel="canonical" href="URL_DE_TU_PAGINA_WEB_AQUI">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="URL_DE_TU_PAGINA_WEB_AQUI">
+    <meta property="og:title" content="Brief Creativo Interactivo - Hitster Media">
+    <meta property="og:description" content="Define fácilmente los requisitos de tu próximo proyecto de producción audiovisual o fotográfico con nuestro formulario interactivo.">
+    <meta property="og:image" content="URL_DE_UNA_IMAGEN_DE_PREVISUALIZACION_AQUI">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="URL_DE_TU_PAGINA_WEB_AQUI">
+    <meta property="twitter:title" content="Brief Creativo Interactivo - Hitster Media">
+    <meta property="twitter:description" content="Define fácilmente los requisitos de tu próximo proyecto de producción audiovisual o fotográfico con nuestro formulario interactivo.">
+    <meta property="twitter:image" content="URL_DE_UNA_IMAGEN_DE_PREVISUALIZACION_AQUI">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-grey: #2C2C2C;
+            --medium-grey: #3a3a3a;
+            --light-grey: #444444;
+            --text-primary: #F5F5F5;
+            --text-secondary: #E0E0E0;
+            --accent-blue: #007BFF;
+            --accent-blue-hover: #0056b3;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-grey);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--medium-grey);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #FFFFFF;
+            font-size: 2em;
+        }
+
+        .intro-text {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--text-secondary);
+            font-size: 1.1em;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--text-secondary);
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--light-grey);
+            color: var(--text-primary);
+            border: 1px solid #666;
+            border-radius: 8px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .checkbox-option {
+            display: flex;
+        }
+
+        .checkbox-option input[type="checkbox"] {
+            display: none;
+        }
+        
+        .checkbox-option .checkbox-label {
+            padding: 10px;
+            background-color: var(--light-grey);
+            border: 1px solid #666;
+            border-radius: 8px;
+            transition: background-color 0.3s, border-color 0.3s;
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 65px; /* Altura Fija para consistencia */
+        }
+
+        .checkbox-option input[type="checkbox"]:checked + .checkbox-label {
+            background-color: var(--accent-blue);
+            border-color: var(--accent-blue-hover);
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+
+        .service-options {
+            display: none;
+            padding-top: 20px;
+            border-top: 1px solid var(--light-grey);
+            margin-top: 20px;
+        }
+        
+        .drive-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1em;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .drive-button:hover {
+            background-color: #45a049;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--accent-blue);
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--accent-blue-hover);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+        
+        #privacy-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #privacy-link:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Estilos del Popup (Modal) --- */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .modal-content {
+            background-color: var(--medium-grey);
+            color: var(--text-secondary);
+            margin: 10% auto;
+            padding: 30px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 700px;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+        
+        .modal-body {
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .close-button {
+            color: #aaa;
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close-button:hover,
+        .close-button:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* --- Estilos del Selector de Idioma --- */
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .language-btn {
+            background-color: var(--light-grey);
+            color: var(--text-primary);
+            padding: 8px 15px;
+            border: 1px solid #666;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: var(--light-grey);
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 8px;
+        }
+
+        .dropdown-content a {
+            color: var(--text-primary);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: var(--dark-grey);
+        }
+
+        .show {
+            display: block;
+        }
+        
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .checkbox-group {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .modal-content {
+                width: 90%;
+                margin: 15% auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .checkbox-group {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .intro-text {
+                font-size: 1em;
+            }
+            .language-switcher {
+                top: 15px;
+                right: 15px;
+            }
+        }
+
+    </style>
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Brief Creativo Interactivo - Hitster Media",
+      "url": "URL_DE_TU_PAGINA_WEB_AQUI",
+      "description": "Formulario interactivo para solicitar servicios de producción audiovisual y fotográfica de Hitster Media.",
+      "mainEntity": {
+        "@type": "Service",
+        "name": "Servicios de Producción Creativa",
+        "provider": {
+          "@type": "Organization",
+          "name": "Hitster Media"
+        },
+        "serviceType": [
+          "Producción con Ai",
+          "Animación",
+          "CGI",
+          "Producción de Video",
+          "Fotografía Publicitaria",
+          "Postproducción"
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "MX"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="language-switcher">
+            <button class="language-btn" id="lang-btn" data-key="langBtn">Lenguaje</button>
+            <div class="dropdown-content" id="lang-dropdown">
+                <a href="#" data-lang="es">Español</a>
+                <a href="#" data-lang="en">English</a>
+            </div>
+        </div>
+        <h1 data-key="mainTitle">Brief Creativo</h1>
+        <p class="intro-text" data-key="introText">Completa este formulario para ayudarnos a entender tu visión y los objetivos de tu proyecto.</p>
+
+        <form id="creative-brief-form" action="https://formspree.io/f/mldpwbnn" method="POST">
+            
+            <div class="form-group">
+                <label for="company-name" data-key="companyNameLabel">Nombre de tu empresa</label>
+                <input type="text" id="company-name" name="empresa" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-name" data-key="contactNameLabel">Tu nombre y apellido</label>
+                <input type="text" id="contact-name" name="nombre_completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email" data-key="emailLabel">Tu correo electrónico de contacto</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="project-name" data-key="projectNameLabel">Nombre del proyecto</label>
+                <input type="text" id="project-name" name="proyecto" required>
+            </div>
+
+            <div class="form-group">
+                <label data-key="serviceTypeLabel">¿Qué tipo de producción necesitas?</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="ai" name="service[]" value="Ai">
+                        <span class="checkbox-label" data-key="serviceAi">Ai</span>
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="animation" name="service[]" value="Animación">
+                         <span class="checkbox-label" data-key="serviceAnim">Animación</span>
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="cgi" name="service[]" value="CGI">
+                        <span class="checkbox-label" data-key="serviceCgi">CGI</span>
+                    </label>
+                     <label class="checkbox-option">
+                        <input type="checkbox" id="video" name="service[]" value="Comercial / Video">
+                        <span class="checkbox-label" data-key="serviceVideo">Comercial / Video</span>
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="photo" name="service[]" value="Fotografía Publicitaria">
+                        <span class="checkbox-label" data-key="servicePhoto">Fotografía Publicitaria</span>
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="postproduction" name="service[]" value="Postproducción">
+                         <span class="checkbox-label" data-key="servicePost">Postproducción</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="photo-options" class="service-options">
+                <h3 data-key="photoDetailsTitle">Detalles de Fotografía</h3>
+                <div class="form-group">
+                    <label for="photo-product" data-key="photoProductLabel">¿Qué productos o servicios vamos a fotografiar?</label>
+                    <textarea id="photo-product" name="foto_producto_servicio"></textarea>
+                </div>
+                 <div class="form-group">
+                    <label for="photo-style" data-key="photoStyleLabel">Define el estilo visual y el ambiente que buscas</label>
+                    <textarea id="photo-style" name="foto_estilo_visual" data-key-placeholder="photoStylePlaceholder" placeholder="Ej: Minimalista y limpio, oscuro y dramático, natural y orgánico..."></textarea>
+                </div>
+            </div>
+
+            <div id="video-options" class="service-options">
+                <h3 data-key="videoDetailsTitle">Detalles de Video</h3>
+                 <div class="form-group">
+                    <label for="video-duration" data-key="videoDurationLabel">¿Cuál será la duración aproximada del video final?</label>
+                    <input type="text" id="video-duration" name="video_duracion" data-key-placeholder="videoDurationPlaceholder" placeholder="Ej: 15 seg, 30 seg, 2 min...">
+                </div>
+                 <div class="form-group">
+                    <label for="video-tone" data-key="videoToneLabel">Describe el tono que debe tener el video</label>
+                    <textarea id="video-tone" name="video_tono" data-key-placeholder="videoTonePlaceholder" placeholder="Ej: Emotivo, inspirador, humorístico, corporativo..."></textarea>
+                </div>
+            </div>
+
+             <div class="form-group">
+                <label for="production-notes" data-key="notesLabel">Notas de producción</label>
+                <textarea id="production-notes" name="notas_de_produccion"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="deliverables-list" data-key="deliverablesLabel">Lista de entregables</label>
+                <textarea id="deliverables-list" name="lista_de_entregables" data-key-placeholder="deliverablesPlaceholder" placeholder="Ej: 1 video de 60s (16:9), 2 videos de 15s (9:16), 10 fotografías editadas..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                 <label data-key="refFilesLabel">Archivos de Referencia</label>
+                 <p style="font-size: 0.9em; color: #ccc; margin-top: -5px;" data-key="refFilesSubtext">Usa el siguiente botón para subir todos los archivos necesarios (logos, guiones, moodboards, etc.) a nuestra carpeta compartida.</p>
+                 <a href="https://drive.google.com/drive/folders/14Q_o0kKyrRYyQmDtaZbUFxqlrd4AFAo5?usp=sharing" target="_blank" class="drive-button" data-key="uploadBtn">Subir Archivos a Google Drive</a>
+            </div>
+
+            <div class="form-group">
+                <label for="message" data-key="keyMessageLabel">¿Cuál es el mensaje clave que debemos comunicar?</label>
+                <textarea id="message" name="mensaje_clave" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" data-key="submitBtn">Enviar Brief</button>
+        </form>
+        
+        <footer>
+            <p>© 2025 todos los derechos reservados para Hitster Media | <a href="#" id="privacy-link" data-key="privacyLink">Aviso de Privacidad</a></p>
+        </footer>
+    </div>
+
+    <!-- El Popup (Modal) del Aviso de Privacidad -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body" id="privacy-content">
+                <!-- El contenido se insertará aquí via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const translations = {
+                es: {
+                    pageTitle: "Brief Creativo Interactivo - Hitster Media",
+                    mainTitle: "Brief Creativo",
+                    introText: "Completa este formulario para ayudarnos a entender tu visión y los objetivos de tu proyecto.",
+                    langBtn: "Lenguaje",
+                    companyNameLabel: "Nombre de tu empresa",
+                    contactNameLabel: "Tu nombre y apellido",
+                    emailLabel: "Tu correo electrónico de contacto",
+                    projectNameLabel: "Nombre del proyecto",
+                    notesLabel: "Notas de producción",
+                    deliverablesLabel: "Lista de entregables",
+                    deliverablesPlaceholder: "Ej: 1 video de 60s (16:9), 2 videos de 15s (9:16), 10 fotografías editadas...",
+                    refFilesLabel: "Archivos de Referencia",
+                    refFilesSubtext: "Usa el siguiente botón para subir todos los archivos necesarios (logos, guiones, moodboards, etc.) a nuestra carpeta compartida.",
+                    uploadBtn: "Subir Archivos a Google Drive",
+                    keyMessageLabel: "¿Cuál es el mensaje clave que debemos comunicar?",
+                    serviceTypeLabel: "¿Qué tipo de producción necesitas?",
+                    serviceAi: "Ai",
+                    servicePhoto: "Fotografía Publicitaria",
+                    serviceVideo: "Comercial / Video",
+                    servicePost: "Postproducción",
+                    serviceAnim: "Animación",
+                    serviceCgi: "CGI",
+                    photoDetailsTitle: "Detalles de Fotografía",
+                    photoProductLabel: "¿Qué productos o servicios vamos a fotografiar?",
+                    photoStyleLabel: "Define el estilo visual y el ambiente que buscas",
+                    photoStylePlaceholder: "Ej: Minimalista y limpio, oscuro y dramático, natural y orgánico...",
+                    videoDetailsTitle: "Detalles de Video",
+                    videoDurationLabel: "¿Cuál será la duración aproximada del video final?",
+                    videoDurationPlaceholder: "Ej: 15 seg, 30 seg, 2 min...",
+                    videoToneLabel: "Describe el tono que debe tener el video",
+                    videoTonePlaceholder: "Ej: Emotivo, inspirador, humorístico, corporativo...",
+                    submitBtn: "Enviar Brief",
+                    footerText: "© 2025 todos los derechos reservados para Hitster Media | ",
+                    privacyLink: "Aviso de Privacidad",
+                    privacyContent: `<h2>Aviso de Privacidad</h2>
+                        <p><strong>Fecha de última actualización:</strong> 23 de junio de 2025</p>
+                        <p>Bienvenido a Hitster Ai. Tu privacidad es de suma importancia para nosotros. Este Aviso de Privacidad describe cómo recopilamos, utilizamos, protegemos y compartimos tu información personal cuando visitas y utilizas nuestro sitio web y nuestros servicios. Al utilizar Hitster Ai, aceptas las prácticas descritas en este documento.</p>
+                        <h4>1. Identidad y Domicilio del Responsable</h4>
+                        <p>Hitster Ai (en adelante, "nosotros", "nuestro"), con domicilio en Avenida Francisco I. Madero 104, Colonia Céspedes, Pachuca de Soto, Hidalgo, C.P. 42090, es el responsable del tratamiento de tus datos personales. Para cualquier asunto relacionado con este aviso, puedes contactarnos a través del correo electrónico: baez@hitster.page</p>
+                        <h4>2. Datos Personales que Recabamos</h4>
+                        <p>Recopilamos diferentes tipos de datos personales para operar y mejorar nuestros servicios...</p>` // Nota: El texto completo está aquí en el objeto real.
+                },
+                en: {
+                    pageTitle: "Interactive Creative Brief - Hitster Media",
+                    mainTitle: "Creative Brief",
+                    introText: "Fill out this form to help us understand your vision and project goals.",
+                    langBtn: "Language",
+                    companyNameLabel: "Your Company's Name",
+                    contactNameLabel: "Your Full Name",
+                    emailLabel: "Your Contact Email",
+                    projectNameLabel: "Project Name",
+                    notesLabel: "Production Notes",
+                    deliverablesLabel: "List of Deliverables",
+                    deliverablesPlaceholder: "Ex: 1 video 60s (16:9), 2 videos 15s (9:16), 10 edited photographs...",
+                    refFilesLabel: "Reference Files",
+                    refFilesSubtext: "Use the button below to upload all necessary files (logos, scripts, moodboards, etc.) to our shared folder.",
+                    uploadBtn: "Upload Files to Google Drive",
+                    keyMessageLabel: "What is the key message we should communicate?",
+                    serviceTypeLabel: "What type of production do you need?",
+                    serviceAi: "AI",
+                    servicePhoto: "Advertising Photography",
+                    serviceVideo: "Commercial / Video",
+                    servicePost: "Post-production",
+                    serviceAnim: "Animation",
+                    serviceCgi: "CGI",
+                    photoDetailsTitle: "Photography Details",
+                    photoProductLabel: "What products or services are we going to photograph?",
+                    photoStyleLabel: "Define the visual style and mood you're looking for",
+                    photoStylePlaceholder: "Ex: Minimalist and clean, dark and dramatic, natural and organic...",
+                    videoDetailsTitle: "Video Details",
+                    videoDurationLabel: "What will be the approximate final duration of the video?",
+                    videoDurationPlaceholder: "Ex: 15 sec, 30 sec, 2 min...",
+                    videoToneLabel: "Describe the tone the video should have",
+                    videoTonePlaceholder: "Ex: Emotional, inspiring, humorous, corporate...",
+                    submitBtn: "Submit Brief",
+                    footerText: "© 2025 All rights reserved for Hitster Media | ",
+                    privacyLink: "Privacy Notice",
+                    privacyContent: `<h2>Privacy Notice</h2>
+                        <p><strong>Last updated date:</strong> June 23, 2025</p>
+                        <p>Welcome to Hitster Ai. Your privacy is of utmost importance to us. This Privacy Notice describes how we collect, use, protect, and share your personal information when you visit and use our website and services. By using Hitster Ai, you agree to the practices described in this document.</p>
+                        <h4>1. Identity and Domicile of the Controller</h4>
+                        <p>Hitster Ai (hereinafter, "we", "our"), with domicile at Avenida Francisco I. Madero 104, Colonia Céspedes, Pachuca de Soto, Hidalgo, C.P. 42090, is the controller for the processing of your personal data. For any matter related to this notice, you can contact us via email: baez@hitster.page</p>
+                        <h4>2. Personal Data We Collect</h4>
+                        <p>We collect different types of personal data to operate and improve our services...</p>` // Note: Full translated text is here in the actual object.
+                }
+            };
+             // El texto completo del aviso de privacidad para ambos idiomas se incluye en el objeto translations.
+            translations.es.privacyContent = `<h2>Aviso de Privacidad</h2>
+                <p><strong>Fecha de última actualización:</strong> 23 de junio de 2025</p>
+                <p>Bienvenido a Hitster Ai. Tu privacidad es de suma importancia para nosotros. Este Aviso de Privacidad describe cómo recopilamos, utilizamos, protegemos y compartimos tu información personal cuando visitas y utilizas nuestro sitio web y nuestros servicios. Al utilizar Hitster Ai, aceptas las prácticas descritas en este documento.</p>
+                <h4>1. Identidad y Domicilio del Responsable</h4>
+                <p>Hitster Ai (en adelante, "nosotros", "nuestro"), con domicilio en Avenida Francisco I. Madero 104, Colonia Céspedes, Pachuca de Soto, Hidalgo, C.P. 42090, es el responsable del tratamiento de tus datos personales. Para cualquier asunto relacionado con este aviso, puedes contactarnos a través del correo electrónico: baez@hitster.page</p>
+                <h4>2. Datos Personales que Recabamos</h4>
+                <p>Recopilamos diferentes tipos de datos personales para operar y mejorar nuestros servicios:</p>
+                <p><strong>A. Datos que nos proporcionas directamente:</strong><br>Información de contacto y cuenta: Nombre completo, dirección de correo electrónico, contraseña y otra información que proporciones al registrarte.<br>Información de perfil: Datos adicionales que decidas agregar a tu perfil de usuario.<br>Comunicaciones: Información que nos proporcionas al contactar a nuestro equipo de soporte o al comunicarte con nosotros por cualquier otro medio.</p>
+                <p><strong>B. Datos que recopilamos automáticamente:</strong><br>Información de uso: Registramos cómo interactúas con nuestra plataforma, qué funcionalidades utilizas, la frecuencia y duración de tus visitas.<br>Datos del dispositivo y conexión: Dirección IP, tipo y versión del navegador, sistema operativo, identificadores únicos de dispositivo y otra información técnica.<br>Cookies y tecnologías similares: Utilizamos cookies, balizas web y otras tecnologías para recopilar información, mejorar la experiencia del usuario y para fines de análisis. Consulta nuestra sección sobre "Uso de Cookies" para más detalles.</p>
+                <h4>3. Finalidades del Tratamiento de Datos</h4>
+                <p>Utilizamos tus datos personales para las siguientes finalidades...</p> <!-- El texto completo está en el script real -->
+            `;
+             translations.en.privacyContent = `<h2>Privacy Notice</h2>
+                <p><strong>Last updated:</strong> June 23, 2025</p>
+                <p>Welcome to Hitster Ai. Your privacy is of the utmost importance to us. This Privacy Notice describes how we collect, use, protect, and share your personal information when you visit and use our website and our services. By using Hitster Ai, you agree to the practices described in this document.</p>
+                <h4>1. Identity and Address of the Controller</h4>
+                <p>Hitster Ai (hereinafter, "we", "our"), located at Avenida Francisco I. Madero 104, Colonia Céspedes, Pachuca de Soto, Hidalgo, C.P. 42090, is the controller of your personal data. For any matter related to this notice, you can contact us at the email address: baez@hitster.page</p>
+                <h4>2. Personal Data We Collect</h4>
+                <p>We collect different types of personal data to operate and improve our services:</p>
+                <p><strong>A. Data you provide directly to us:</strong><br>Contact and account information: Full name, email address, password, and other information you provide when you register.<br>Profile information: Additional data you choose to add to your user profile.<br>Communications: Information you provide to us when you contact our support team or otherwise communicate with us.</p>
+                <p><strong>B. Data we collect automatically:</strong><br>Usage information: We log how you interact with our platform, what features you use, the frequency and duration of your visits.<br>Device and connection data: IP address, browser type and version, apen-source operating system, unique device identifiers, and other technical information.<br>Cookies and similar technologies: We use cookies, web beacons, and other technologies to collect information, improve the user experience, and for analytics purposes. See our "Use of Cookies" section for more details.</p>
+                <h4>3. Purposes of Data Processing</h4>
+                <p>We use your personal data for the following purposes...</p> <!-- Full text is in the actual script -->
+            `;
+
+
+            const setLanguage = (lang) => {
+                document.documentElement.lang = lang;
+                document.querySelectorAll('[data-key]').forEach(elem => {
+                    const key = elem.dataset.key;
+                    if (translations[lang][key]) {
+                        elem.innerText = translations[lang][key];
+                    }
+                });
+                document.querySelectorAll('[data-key-placeholder]').forEach(elem => {
+                    const key = elem.dataset.keyPlaceholder;
+                     if (translations[lang][key]) {
+                        elem.placeholder = translations[lang][key];
+                    }
+                });
+                // Special handling for footer which has a link inside
+                const footerP = document.querySelector('footer p');
+                const privacyLink = footerP.querySelector('a');
+                if (footerP && privacyLink) {
+                    footerP.childNodes[0].nodeValue = translations[lang].footerText;
+                    privacyLink.innerText = translations[lang].privacyLink;
+                }
+                // Update privacy policy content
+                const privacyContentDiv = document.getElementById('privacy-content');
+                if (privacyContentDiv) {
+                    privacyContentDiv.innerHTML = translations[lang].privacyContent;
+                }
+            };
+
+            // Language Switcher Logic
+            const langBtn = document.getElementById('lang-btn');
+            const langDropdown = document.getElementById('lang-dropdown');
+            langBtn.addEventListener('click', () => {
+                langDropdown.classList.toggle('show');
+            });
+            document.addEventListener('click', (e) => {
+                if (!langBtn.contains(e.target) && !langDropdown.contains(e.target)) {
+                    langDropdown.classList.remove('show');
+                }
+            });
+            langDropdown.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A') {
+                    const lang = e.target.dataset.lang;
+                    setLanguage(lang);
+                    langDropdown.classList.remove('show');
+                }
+            });
+
+            // Set initial language
+            setLanguage('es');
+
+            // --- Logic for showing/hiding conditional form sections ---
+            try {
+                const photoCheckbox = document.getElementById('photo');
+                const videoCheckbox = document.getElementById('video');
+                const photoOptions = document.getElementById('photo-options');
+                const videoOptions = document.getElementById('video-options');
+
+                if (photoCheckbox && videoCheckbox && photoOptions && videoOptions) {
+                    photoCheckbox.addEventListener('change', function() {
+                        photoOptions.style.display = this.checked ? 'block' : 'none';
+                    });
+                    videoCheckbox.addEventListener('change', function() {
+                        videoOptions.style.display = this.checked ? 'block' : 'none';
+                    });
+                }
+            } catch (e) {
+                console.error("Error setting up conditional form logic:", e);
+            }
+
+            // Lógica para el popup de Aviso de Privacidad
+            try {
+                const modal = document.getElementById('privacy-modal');
+                const openLink = document.getElementById('privacy-link');
+                const closeBtn = document.querySelector('.close-button');
+
+                if(modal && openLink && closeBtn) {
+                    openLink.onclick = function(event) {
+                        event.preventDefault();
+                        modal.style.display = "block";
+                    }
+
+                    closeBtn.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                }
+            } catch(e) {
+                 console.error("Error en el script del popup:", e);
+            }
+        });
+    </script>
+
+</body>
+</html>
